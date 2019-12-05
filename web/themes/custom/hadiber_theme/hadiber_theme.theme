@@ -14,6 +14,8 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Example on how to alter theme settings form
  *
+ * @param $form
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
  */
 function hadiber_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
   $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
