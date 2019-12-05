@@ -1,0 +1,6 @@
+name: hadiber
+recipe: pantheon
+config:
+  framework: drupal8
+  site: hadiber
+  id: 3ec1d47f-7f1e-4735-82c2-18b5f43ce7e0

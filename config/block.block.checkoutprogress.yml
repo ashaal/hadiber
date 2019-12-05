@@ -1,0 +1,20 @@
+uuid: 7fe15b54-f30b-406f-bd35-a30f57c65d8c
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+  theme:
+    - bartik
+id: checkoutprogress
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: visible
+visibility: {  }

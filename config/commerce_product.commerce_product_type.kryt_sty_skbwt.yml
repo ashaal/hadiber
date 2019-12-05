@@ -1,0 +1,12 @@
+uuid: c38a5a92-9edd-4918-b0f5-219e84d39a53
+langcode: en
+status: true
+dependencies: {  }
+id: kryt_sty_skbwt
+label: 'כרית שתי שכבות'
+description: ''
+variationType: kryt_sty_skbwt
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

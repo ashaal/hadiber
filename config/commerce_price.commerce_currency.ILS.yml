@@ -1,0 +1,9 @@
+uuid: 6c9b10d1-3ec1-4ba9-860a-f9b5b2e5ce54
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: ILS
+name: 'Israeli New Shekel'
+numericCode: '376'
+symbol: ₪
+fractionDigits: 2

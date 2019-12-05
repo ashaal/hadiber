@@ -1,0 +1,7 @@
+uuid: 2c0c040e-5809-4f8a-8011-dafd0fa5e2f0
+langcode: en
+status: true
+dependencies: {  }
+id: zb_sl_kryt_sty_skbwt
+label: צבע
+elementType: select

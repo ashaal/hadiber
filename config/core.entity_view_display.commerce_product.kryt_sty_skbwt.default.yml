@@ -1,0 +1,44 @@
+uuid: 41a69282-c88a-40a0-8c95-e475acc7b59a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kryt_sty_skbwt
+    - field.field.commerce_product.kryt_sty_skbwt.body
+    - field.field.commerce_product.kryt_sty_skbwt.stores
+    - field.field.commerce_product.kryt_sty_skbwt.variations
+  module:
+    - commerce_product
+    - text
+id: commerce_product.kryt_sty_skbwt.default
+targetEntityType: commerce_product
+bundle: kryt_sty_skbwt
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: -4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

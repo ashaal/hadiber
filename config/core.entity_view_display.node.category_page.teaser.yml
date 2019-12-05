@@ -1,0 +1,44 @@
+uuid: 77cddc85-0bac-4665-97e1-1e8555be847a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.category_page.body
+    - field.field.node.category_page.field_category_image
+    - field.field.node.category_page.field_qtgwrywt
+    - image.style.thumbnail
+    - node.type.category_page
+  module:
+    - image
+    - text
+    - user
+id: node.category_page.teaser
+targetEntityType: node
+bundle: category_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_category_image:
+    type: image
+    weight: 2
+    region: content
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_qtgwrywt: true

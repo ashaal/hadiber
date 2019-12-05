@@ -1,0 +1,22 @@
+uuid: 9d2ff365-98e0-417d-b8b6-7ff75ab32a79
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hadiber_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: hadiber_theme_breadcrumbs
+theme: hadiber_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

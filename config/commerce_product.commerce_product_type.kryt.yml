@@ -1,0 +1,12 @@
+uuid: 1fcb767f-cf8b-4e05-8f8f-d86c01887c47
+langcode: en
+status: true
+dependencies: {  }
+id: kryt
+label: 'כרית שטוחה'
+description: ''
+variationType: kryt_stwhh
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

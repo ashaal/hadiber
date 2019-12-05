@@ -1,0 +1,22 @@
+uuid: 17443947-b8d1-443a-8946-90a1d0a345f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kryt_sty_skbwt
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.kryt_sty_skbwt.body
+field_name: body
+entity_type: commerce_product
+bundle: kryt_sty_skbwt
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,24 @@
+uuid: 1af8f7cd-72ca-4af5-b462-fe4ef2f90d75
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kryt_sty_skbwt
+    - commerce_product.commerce_product_variation_type.kryt_sty_skbwt
+    - field.storage.commerce_product.variations
+id: commerce_product.kryt_sty_skbwt.variations
+field_name: variations
+entity_type: commerce_product
+bundle: kryt_sty_skbwt
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - kryt_sty_skbwt
+field_type: entity_reference
