@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "4b1b64038f26e76c0682b0b046336527",
@@ -8465,16 +8465,16 @@
         },
         {
             "name": "genesis/behat-fail-aid",
-            "version": "2.4.0",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/forceedge01/behat-fail-aid.git",
-                "reference": "775f5df682974351de3d923ce3e7db3dc67bdd0d"
+                "reference": "2151a1b7439115f27fd7e6c081dc69aaba0a3ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/forceedge01/behat-fail-aid/zipball/775f5df682974351de3d923ce3e7db3dc67bdd0d",
-                "reference": "775f5df682974351de3d923ce3e7db3dc67bdd0d",
+                "url": "https://api.github.com/repos/forceedge01/behat-fail-aid/zipball/2151a1b7439115f27fd7e6c081dc69aaba0a3ac6",
+                "reference": "2151a1b7439115f27fd7e6c081dc69aaba0a3ac6",
                 "shasum": ""
             },
             "require": {
@@ -8500,6 +8500,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Abdul Wahhab Qureshi"
@@ -8514,7 +8517,7 @@
                 "error",
                 "fail"
             ],
-            "time": "2019-12-02T16:48:57+00:00"
+            "time": "2019-12-05T14:27:27+00:00"
         },
         {
             "name": "instaclick/php-webdriver",
