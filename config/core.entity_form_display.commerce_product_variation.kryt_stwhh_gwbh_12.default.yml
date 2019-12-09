@@ -1,19 +1,19 @@
-uuid: 049a18ff-f973-4f34-91f5-d03c478e0ef2
+uuid: f8fdb924-fae3-4c5f-bee1-37fcc2fd6b97
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_variation_type.kryt_stwhh
-    - field.field.commerce_product_variation.kryt_stwhh.attribute_gwbh
-    - field.field.commerce_product_variation.kryt_stwhh.field_caregory
-    - field.field.commerce_product_variation.kryt_stwhh.field_kryt_stwhh_gwbh_12
+    - commerce_product.commerce_product_variation_type.kryt_stwhh_gwbh_12
+    - field.field.commerce_product_variation.kryt_stwhh_gwbh_12.attribute_gwbh
+    - field.field.commerce_product_variation.kryt_stwhh_gwbh_12.field_caregory
+    - field.field.commerce_product_variation.kryt_stwhh_gwbh_12.field_kryt_stwhh_gwbh_12
     - image.style.thumbnail
   module:
     - commerce_price
     - image
-id: commerce_product_variation.kryt_stwhh.default
+id: commerce_product_variation.kryt_stwhh_gwbh_12.default
 targetEntityType: commerce_product_variation
-bundle: kryt_stwhh
+bundle: kryt_stwhh_gwbh_12
 mode: default
 content:
   attribute_gwbh:

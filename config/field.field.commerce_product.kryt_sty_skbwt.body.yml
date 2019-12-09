@@ -11,7 +11,7 @@ id: commerce_product.kryt_sty_skbwt.body
 field_name: body
 entity_type: commerce_product
 bundle: kryt_sty_skbwt
-label: Body
+label: 'תיאור המוצר'
 description: ''
 required: false
 translatable: true

@@ -1,0 +1,18 @@
+uuid: 0c92b9a9-492b-4a73-b6d9-a7445e895ec3
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_attribute_value.field_height
+field_name: field_height
+entity_type: commerce_product_attribute_value
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

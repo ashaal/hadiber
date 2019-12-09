@@ -1,19 +1,20 @@
-uuid: 007c082d-f05b-4f26-8c41-ab0010804ab5
+uuid: 42640d52-a18d-4cc8-a599-157a3384cb75
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_product
-id: commerce_product_variation.attribute_gwbh_sl_kryt_stwhh
-field_name: attribute_gwbh_sl_kryt_stwhh
+    - taxonomy
+id: commerce_product_variation.field_caregory
+field_name: field_caregory
 entity_type: commerce_product_variation
 type: entity_reference
 settings:
-  target_type: commerce_product_attribute_value
+  target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
-translatable: false
+cardinality: -1
+translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

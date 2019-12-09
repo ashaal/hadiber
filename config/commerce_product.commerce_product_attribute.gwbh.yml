@@ -1,7 +1,7 @@
-uuid: b0a074e0-f98f-4d8f-89b4-f72d4cfce635
+uuid: c932f2da-e877-49a1-a4d4-ee3867771bae
 langcode: en
 status: true
 dependencies: {  }
-id: gwbh_sl_kryt_stwhh
+id: gwbh
 label: גובה
 elementType: select

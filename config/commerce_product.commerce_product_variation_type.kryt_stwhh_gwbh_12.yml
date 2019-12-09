@@ -1,9 +1,9 @@
-uuid: 36e3d27a-d4d5-4e8f-a0ee-d8ffba60cc1a
+uuid: 692057f5-7dc6-4749-95ec-86055ae4b71d
 langcode: en
 status: true
 dependencies: {  }
-id: kryt_stwhh
-label: 'כרית שטוחה גובה 8'
+id: kryt_stwhh_gwbh_12
+label: 'כרית שטוחה גובה 12'
 orderItemType: default
 generateTitle: false
 traits: {  }

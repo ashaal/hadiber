@@ -1,0 +1,29 @@
+uuid: cca6c5d9-59d7-492e-a0f2-4f8f9663228f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kryt
+    - field.storage.commerce_product.field_product_category
+    - taxonomy.vocabulary.categories
+id: commerce_product.kryt.field_product_category
+field_name: field_product_category
+entity_type: commerce_product
+bundle: kryt
+label: 'Product category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

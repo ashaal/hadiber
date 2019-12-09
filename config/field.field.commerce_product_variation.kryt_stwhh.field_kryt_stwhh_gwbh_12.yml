@@ -1,17 +1,17 @@
-uuid: 85443247-85d1-4269-8630-e0d70a64e7b9
+uuid: fd949ddc-0887-4fed-b0dc-8a7be638bda9
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.kryt_stwhh
-    - field.storage.commerce_product_variation.field_karit_shtoocha_image
+    - field.storage.commerce_product_variation.field_kryt_stwhh_gwbh_12
   module:
     - image
-id: commerce_product_variation.kryt_stwhh.field_karit_shtoocha_image
-field_name: field_karit_shtoocha_image
+id: commerce_product_variation.kryt_stwhh.field_kryt_stwhh_gwbh_12
+field_name: field_kryt_stwhh_gwbh_12
 entity_type: commerce_product_variation
 bundle: kryt_stwhh
-label: 'תמונה של הכרית השטוחה'
+label: 'כרית שטוחה גובה 8'
 description: ''
 required: false
 translatable: false
@@ -21,7 +21,7 @@ settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
-  max_resolution: 480x320
+  max_resolution: 640x480
   min_resolution: ''
   alt_field: true
   alt_field_required: true

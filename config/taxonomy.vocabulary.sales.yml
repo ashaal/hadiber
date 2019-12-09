@@ -1,0 +1,8 @@
+uuid: d40730a0-849a-4bd3-aeb7-d659718fb6fd
+langcode: en
+status: true
+dependencies: {  }
+name: Sales
+vid: sales
+description: 'תייג מוצרים שבמבצע'
+weight: 0

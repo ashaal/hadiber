@@ -5,40 +5,37 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.kryt_sty_skbwt
     - field.field.commerce_product.kryt_sty_skbwt.body
+    - field.field.commerce_product.kryt_sty_skbwt.field_caregory
+    - field.field.commerce_product.kryt_sty_skbwt.field_special_categories
     - field.field.commerce_product.kryt_sty_skbwt.stores
     - field.field.commerce_product.kryt_sty_skbwt.variations
   module:
     - commerce_product
-    - text
 id: commerce_product.kryt_sty_skbwt.default
 targetEntityType: commerce_product
 bundle: kryt_sty_skbwt
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: -4
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   title:
     label: hidden
     type: string
-    weight: -5
+    weight: 0
     region: content
     settings:
       link_to_entity: false
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 10
-    label: above
+    weight: 2
+    label: hidden
     settings:
       combine: true
     third_party_settings: {  }
     region: content
 hidden:
+  body: true
   created: true
+  field_caregory: true
+  field_special_categories: true
   stores: true
   uid: true

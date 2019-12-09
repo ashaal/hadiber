@@ -1,0 +1,10 @@
+uuid: 745d2188-731d-4179-a447-f24d646d5dce
+langcode: en
+status: true
+dependencies: {  }
+label: 'Add to cart'
+id: add_to_cart
+purchasableEntityType: commerce_product_variation
+orderType: default
+traits: {  }
+locked: false

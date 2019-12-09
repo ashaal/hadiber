@@ -1,0 +1,30 @@
+uuid: f3c29c55-c445-460f-89f5-5d89bbd6b247
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+    - image
+id: commerce_product_variation.field_kryt_stwhh_gwbh_12
+field_name: field_kryt_stwhh_gwbh_12
+entity_type: commerce_product_variation
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

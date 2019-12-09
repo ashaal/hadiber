@@ -1,0 +1,33 @@
+uuid: 2d3351ab-923f-4c81-b51d-7ec204cbde03
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.kryt_stwhh
+    - field.storage.commerce_product_variation.field_caregory
+    - taxonomy.vocabulary.categories
+  content:
+    - 'taxonomy_term:categories:1e9b1d1f-0ed6-4260-bf9d-7cef505155b8'
+id: commerce_product_variation.kryt_stwhh.field_caregory
+field_name: field_caregory
+entity_type: commerce_product_variation
+bundle: kryt_stwhh
+label: Caregory
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 1e9b1d1f-0ed6-4260-bf9d-7cef505155b8
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

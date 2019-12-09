@@ -5,7 +5,7 @@ dependencies: {  }
 id: kryt
 label: 'כרית שטוחה'
 description: ''
-variationType: kryt_stwhh
+variationType: kryt_stwhh_gwbh_12
 multipleVariations: true
 injectVariationFields: true
 traits: {  }

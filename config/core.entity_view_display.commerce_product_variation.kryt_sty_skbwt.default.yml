@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_variation_type.kryt_sty_skbwt
     - field.field.commerce_product_variation.kryt_sty_skbwt.attribute_zb_sl_kryt_sty_skbwt
     - field.field.commerce_product_variation.kryt_sty_skbwt.field_pillow_2_layered_image
+    - image.style.medium
   module:
     - commerce_price
     - image
@@ -15,10 +16,10 @@ bundle: kryt_sty_skbwt
 mode: default
 content:
   field_pillow_2_layered_image:
-    weight: 1
-    label: above
+    weight: 3
+    label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
@@ -26,7 +27,7 @@ content:
   list_price:
     label: above
     type: commerce_price_default
-    weight: -1
+    weight: 1
     region: content
     settings:
       strip_trailing_zeroes: false
@@ -35,14 +36,21 @@ content:
   price:
     label: above
     type: commerce_price_default
-    weight: 0
+    weight: 2
     region: content
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   attribute_zb_sl_kryt_sty_skbwt: true
   product_id: true
   sku: true
-  title: true

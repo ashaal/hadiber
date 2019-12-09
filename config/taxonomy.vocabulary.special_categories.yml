@@ -1,0 +1,8 @@
+uuid: c35f0c12-d62a-475d-8c5a-be31784c6109
+langcode: en
+status: true
+dependencies: {  }
+name: 'Special categories'
+vid: special_categories
+description: 'קטגוריות מיוחדות. כגון: מצבעים, הושקו לאחרונה וכו'
+weight: 0
