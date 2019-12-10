@@ -1,0 +1,10 @@
+uuid: fbf5c8b0-e466-49e3-a2de-57eadeffc95f
+langcode: en
+status: true
+dependencies: {  }
+id: kys_mbtyh_mstwbb
+label: 'כיסא אמבטיה מסתובב BEN'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

@@ -1,0 +1,12 @@
+uuid: cc415534-5b89-476b-878d-c38f6b9f4f0c
+langcode: en
+status: true
+dependencies: {  }
+id: kys_mbtyh_mstwbb
+label: 'כיסא אמבטיה מסתובב'
+description: ''
+variationType: spinning_bathroom_chair
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

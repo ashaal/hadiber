@@ -1,0 +1,20 @@
+uuid: eb4aa9df-0743-4e21-adb7-fcb68e00d411
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - text
+id: commerce_product.field_short_description
+field_name: field_short_description
+entity_type: commerce_product
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

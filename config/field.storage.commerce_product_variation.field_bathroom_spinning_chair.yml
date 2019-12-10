@@ -1,0 +1,30 @@
+uuid: 66df6ace-8b99-4eea-be51-e397e31c6fb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+    - image
+id: commerce_product_variation.field_bathroom_spinning_chair
+field_name: field_bathroom_spinning_chair
+entity_type: commerce_product_variation
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

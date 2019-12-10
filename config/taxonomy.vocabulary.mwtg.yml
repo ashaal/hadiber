@@ -1,0 +1,8 @@
+uuid: 8d2961ea-633e-4e1a-b3ab-37dfdaec6594
+langcode: en
+status: true
+dependencies: {  }
+name: מותג
+vid: mwtg
+description: ' בחר את המותג המתאים למוצר'
+weight: 0

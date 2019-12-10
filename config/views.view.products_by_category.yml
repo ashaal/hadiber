@@ -3,16 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.commerce_product.field_product_image
+    - image.style.thumbnail
     - taxonomy.vocabulary.categories
   content:
-    - 'taxonomy_term:categories:46a95272-bdc3-4240-a9f6-b45bda886fd6'
-    - 'taxonomy_term:categories:4fd1690a-f5fc-44ec-aeca-c2b2117d4fb0'
-    - 'taxonomy_term:categories:6cbe6880-f3e7-431c-a168-42800c015cde'
-    - 'taxonomy_term:categories:cfc60265-f8aa-405b-9550-d7a46415a90b'
-    - 'taxonomy_term:categories:eed39fc6-de68-43e9-ae1a-2cebb0bb03c1'
+    - 'taxonomy_term:categories:1e9b1d1f-0ed6-4260-bf9d-7cef505155b8'
     - 'taxonomy_term:categories:fb76b074-7700-4c1c-9f96-8db4fb44fe64'
   module:
     - commerce_product
+    - image
     - taxonomy
 id: products_by_category
 label: 'Products by category'
@@ -77,7 +76,12 @@ display:
       style:
         type: grid
       row:
-        type: 'entity:commerce_product'
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         title:
           table: commerce_product_field_data
@@ -143,6 +147,123 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_product_image:
+          id: field_product_image
+          table: commerce_product__field_product_image
+          field: field_product_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: thumbnail
+            image_link: content
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        view_commerce_product:
+          id: view_commerce_product
+          table: commerce_product
+          field: view_commerce_product
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: 'לפרטים נוספים'
+          output_url_as_text: false
+          absolute: false
+          entity_type: commerce_product
+          plugin_id: entity_link
       filters:
         status:
           value: '1'
@@ -162,14 +283,10 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: and
+          operator: or
           value:
-            14: 14
-            11: 11
-            15: 15
-            13: 13
-            16: 16
             12: 12
+            2: 2
           group: 1
           exposed: false
           expose:
@@ -205,21 +322,58 @@ display:
           error_message: true
           plugin_id: taxonomy_index_tid
       sorts: {  }
-      title: 'Products by category'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
-      arguments: {  }
+      arguments:
+        field_caregory_target_id:
+          id: field_caregory_target_id
+          table: commerce_product__field_caregory
+          field: field_caregory_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: ignore
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+          plugin_id: numeric
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user
-      tags: {  }
+      tags:
+        - 'config:field.storage.commerce_product.field_product_image'
   block_1:
     display_plugin: block
     id: block_1
@@ -232,6 +386,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user
-      tags: {  }
+      tags:
+        - 'config:field.storage.commerce_product.field_product_image'

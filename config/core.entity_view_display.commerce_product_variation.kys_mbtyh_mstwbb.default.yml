@@ -1,0 +1,46 @@
+uuid: da0ae9f6-106b-43e9-afd0-acf10a7ddc06
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.kys_mbtyh_mstwbb
+    - field.field.commerce_product_variation.kys_mbtyh_mstwbb.field_bathroom_spinning_chair
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.kys_mbtyh_mstwbb.default
+targetEntityType: commerce_product_variation
+bundle: kys_mbtyh_mstwbb
+mode: default
+content:
+  field_bathroom_spinning_chair:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  list_price:
+    label: above
+    type: commerce_price_default
+    weight: -1
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    label: above
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+hidden:
+  product_id: true
+  sku: true
+  title: true

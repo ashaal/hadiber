@@ -1,0 +1,10 @@
+uuid: 1c870ffd-a043-4061-b864-2a758d3f943e
+langcode: en
+status: true
+dependencies: {  }
+id: spinning_bathroom_chair
+label: 'כיסא אמבטיה מסתובב'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

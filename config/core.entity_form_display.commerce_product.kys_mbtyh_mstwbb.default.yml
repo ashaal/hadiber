@@ -1,0 +1,112 @@
+uuid: 05da174f-b813-4a30-8a22-36ae8d3bec49
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kys_mbtyh_mstwbb
+    - field.field.commerce_product.kys_mbtyh_mstwbb.body
+    - field.field.commerce_product.kys_mbtyh_mstwbb.field_brand
+    - field.field.commerce_product.kys_mbtyh_mstwbb.field_product_category
+    - field.field.commerce_product.kys_mbtyh_mstwbb.field_product_image
+    - field.field.commerce_product.kys_mbtyh_mstwbb.field_short_description
+    - field.field.commerce_product.kys_mbtyh_mstwbb.stores
+    - field.field.commerce_product.kys_mbtyh_mstwbb.variations
+    - image.style.thumbnail
+  module:
+    - image
+    - inline_entity_form
+    - path
+    - text
+id: commerce_product.kys_mbtyh_mstwbb.default
+targetEntityType: commerce_product
+bundle: kys_mbtyh_mstwbb
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_brand:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_product_category:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_product_image:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_short_description:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  stores:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  variations:
+    type: inline_entity_form_complex
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      allow_duplicate: false
+    third_party_settings: {  }
+hidden:
+  uid: true

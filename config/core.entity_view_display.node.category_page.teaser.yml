@@ -21,16 +21,16 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
   field_category_image:
     type: image
-    weight: 2
+    weight: 1
     region: content
-    label: above
+    label: hidden
     settings:
       image_style: thumbnail
       image_link: ''
