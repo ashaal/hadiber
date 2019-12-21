@@ -13,7 +13,7 @@ _core:
 id: bootstrap_barrio_subtheme_account_menu
 theme: bootstrap_barrio_subtheme
 region: secondary_menu
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

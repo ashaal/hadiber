@@ -1,31 +1,30 @@
-uuid: 1937ef91-d677-4cc0-895e-24ef6e50858e
+uuid: 7f6b30a2-691b-470d-86af-609bb499d373
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.products_by_category
+    - views.view.hmbz_ym_slnw
   module:
     - system
     - views
   theme:
     - bootstrap
-id: views_block__products_by_category_block_1_2
+id: views_block__our_sales
 theme: bootstrap
-region: content
-weight: -7
+region: highlighted
+weight: -8
 provider: null
-plugin: 'views_block:products_by_category-block_1'
+plugin: 'views_block:hmbz_ym_slnw-block_1'
 settings:
-  id: 'views_block:products_by_category-block_1'
+  id: 'views_block:hmbz_ym_slnw-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /bath
+    pages: '<front>'
     negate: false
     context_mapping: {  }

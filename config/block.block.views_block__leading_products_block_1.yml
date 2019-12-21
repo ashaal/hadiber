@@ -1,31 +1,30 @@
-uuid: 1937ef91-d677-4cc0-895e-24ef6e50858e
+uuid: 88e1696f-c2e4-4648-9173-5060c7ec646d
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.products_by_category
+    - views.view.leading_products
   module:
     - system
     - views
   theme:
     - bootstrap
-id: views_block__products_by_category_block_1_2
+id: views_block__leading_products_block_1
 theme: bootstrap
-region: content
+region: highlighted
 weight: -7
 provider: null
-plugin: 'views_block:products_by_category-block_1'
+plugin: 'views_block:leading_products-block_1'
 settings:
-  id: 'views_block:products_by_category-block_1'
+  id: 'views_block:leading_products-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /bath
+    pages: '<front>'
     negate: false
     context_mapping: {  }

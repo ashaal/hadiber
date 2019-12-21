@@ -1,15 +1,15 @@
-uuid: 945f1c62-4ede-4c49-9706-c9e0a2224d1c
+uuid: a7e2dcc8-17d6-41e7-b77e-b588f2ff7d48
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_cart
   theme:
-    - bootstrap
-id: cart_2
-theme: bootstrap
-region: sidebar_second
-weight: -7
+    - bootstrap_barrio_subtheme
+id: cart_3
+theme: bootstrap_barrio_subtheme
+region: secondary_menu
+weight: -6
 provider: null
 plugin: commerce_cart
 settings:

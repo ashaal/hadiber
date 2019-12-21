@@ -1,0 +1,21 @@
+uuid: a2c9a10a-1542-4190-96c2-cd0cb9922a59
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - bootstrap
+id: cart_4
+theme: bootstrap
+region: sidebar_second
+weight: 0
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: visible
+  dropdown: true
+visibility: {  }
