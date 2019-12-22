@@ -7,7 +7,6 @@ dependencies:
     - field.field.commerce_product.kryt.body
     - field.field.commerce_product.kryt.field_product_category
     - field.field.commerce_product.kryt.field_product_image
-    - field.field.commerce_product.kryt.stores
   module:
     - image
     - text
