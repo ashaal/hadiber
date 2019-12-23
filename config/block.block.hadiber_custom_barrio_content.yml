@@ -1,15 +1,15 @@
-uuid: 101fb935-725b-49a9-9262-9998c70838aa
+uuid: 625973cf-07ca-41b4-86db-cb4853acd852
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - hadiber_theme
+    - hadiber_custom_barrio
 _core:
   default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: hadiber_theme_content
-theme: hadiber_theme
+id: hadiber_custom_barrio_content
+theme: hadiber_custom_barrio
 region: content
 weight: 0
 provider: null

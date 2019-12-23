@@ -16,7 +16,6 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "drupal/admin_toolbar": "^2.0",
         "drupal/bootstrap": "^3.21",
-        "drupal/bootstrap_barrio": "^4.22",
         "drupal/coffee": "^1.0@beta",
         "drupal/commerce": "^2.15",
         "drupal/config_direct_save": "^1.0",

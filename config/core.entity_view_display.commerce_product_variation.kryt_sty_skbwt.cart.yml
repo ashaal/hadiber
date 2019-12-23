@@ -17,7 +17,7 @@ mode: cart
 content:
   attribute_zb_sl_kryt_sty_skbwt:
     type: entity_reference_entity_view
-    weight: 2
+    weight: 1
     region: content
     label: above
     settings:
@@ -25,7 +25,7 @@ content:
       link: false
     third_party_settings: {  }
   field_pillow_2_layered_image:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: ''
@@ -33,39 +33,17 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  list_price:
-    label: above
-    type: commerce_price_default
-    weight: 3
-    region: content
-    settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
-    third_party_settings: {  }
   price:
-    label: above
     type: commerce_price_default
-    weight: 4
+    weight: 2
     region: content
+    label: above
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
-    third_party_settings: {  }
-  sku:
-    type: string
-    weight: 5
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  title:
-    type: string
-    weight: 0
-    region: content
-    label: hidden
-    settings:
-      link_to_entity: false
     third_party_settings: {  }
 hidden:
+  list_price: true
   product_id: true
+  sku: true
+  title: true

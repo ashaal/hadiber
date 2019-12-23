@@ -1,17 +1,17 @@
-uuid: 0a5d7f05-65ab-4db7-941a-d1e97bf8d858
+uuid: 5ff03013-d465-4b62-a31f-a39965a90365
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - hadiber_theme
+    - hadiber_custom_barrio
 _core:
   default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: hadiber_theme_branding
-theme: hadiber_theme
+id: hadiber_custom_barrio_branding
+theme: hadiber_custom_barrio
 region: header
-weight: 0
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

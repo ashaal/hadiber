@@ -1,4 +1,4 @@
-uuid: 2e45c3d4-b244-4ba1-b5e0-f89ff14f0809
+uuid: 88cd295d-43ab-4f31-8a79-9a24acdd5924
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - hadiber_theme
+    - hadiber_custom_barrio
 _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
-id: hadiber_theme_account_menu
-theme: hadiber_theme
+id: hadiber_custom_barrio_account_menu
+theme: hadiber_custom_barrio
 region: secondary_menu
-weight: 0
+weight: -7
 provider: null
 plugin: 'system_menu_block:account'
 settings:

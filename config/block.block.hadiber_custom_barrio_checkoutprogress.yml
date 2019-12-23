@@ -1,0 +1,20 @@
+uuid: dfb48b09-de92-4ec0-b673-0336ef11fa1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+  theme:
+    - hadiber_custom_barrio
+id: hadiber_custom_barrio_checkoutprogress
+theme: hadiber_custom_barrio
+region: header
+weight: 0
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: visible
+visibility: {  }

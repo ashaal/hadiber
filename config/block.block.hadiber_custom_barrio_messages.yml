@@ -1,15 +1,15 @@
-uuid: 2a97aefc-ffd4-449f-82d7-dcd0c6b2fb5b
+uuid: 0016c111-8798-4b3b-a6b0-b6a5c688cd17
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - hadiber_theme
+    - hadiber_custom_barrio
 _core:
   default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: hadiber_theme_messages
-theme: hadiber_theme
+id: hadiber_custom_barrio_messages
+theme: hadiber_custom_barrio
 region: highlighted
 weight: 0
 provider: null

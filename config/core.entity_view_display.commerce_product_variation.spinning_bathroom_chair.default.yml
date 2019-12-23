@@ -14,7 +14,7 @@ bundle: spinning_bathroom_chair
 mode: default
 content:
   field_bathroom_spinning_chair:
-    weight: 4
+    weight: 1
     label: hidden
     settings:
       image_style: ''
@@ -22,15 +22,6 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  list_price:
-    label: above
-    type: commerce_price_default
-    weight: 1
-    region: content
-    settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
-    third_party_settings: {  }
   price:
     label: above
     type: commerce_price_default
@@ -40,22 +31,6 @@ content:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
-  product_id:
-    type: entity_reference_label
-    weight: 5
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  sku:
-    type: string
-    weight: 3
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   title:
     type: string
     weight: 0
@@ -64,4 +39,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  list_price: true
+  product_id: true
+  sku: true

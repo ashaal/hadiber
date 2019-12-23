@@ -1,4 +1,4 @@
-uuid: 1937ef91-d677-4cc0-895e-24ef6e50858e
+uuid: ef51c8c8-1791-4497-878a-8e15baa54aa5
 langcode: en
 status: true
 dependencies:
@@ -8,24 +8,23 @@ dependencies:
     - system
     - views
   theme:
-    - bootstrap
-id: views_block__products_by_category_block_1_2
-theme: bootstrap
+    - hadiber_custom_barrio
+id: hadiber_custom_barrio_views_block__products_by_category_block_1
+theme: hadiber_custom_barrio
 region: content
-weight: -7
+weight: 0
 provider: null
 plugin: 'views_block:products_by_category-block_1'
 settings:
   id: 'views_block:products_by_category-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: /bath
+    pages: /Bathroom
     negate: false
     context_mapping: {  }

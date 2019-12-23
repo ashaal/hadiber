@@ -1,13 +1,13 @@
-uuid: a44bfc18-50a6-4e34-b41d-d01323fe8762
+uuid: 8a88a19e-0ef9-46bb-8c50-b29643c8bd9c
 langcode: en
 status: true
 dependencies:
   theme:
-    - hadiber_theme
+    - hadiber_custom_barrio
 _core:
   default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
-id: hadiber_theme_local_actions
-theme: hadiber_theme
+id: hadiber_custom_barrio_local_actions
+theme: hadiber_custom_barrio
 region: content
 weight: -20
 provider: null

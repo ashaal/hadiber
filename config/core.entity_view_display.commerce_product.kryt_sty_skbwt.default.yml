@@ -22,7 +22,7 @@ content:
     weight: 0
     region: content
     settings:
-      link_to_entity: false
+      link_to_entity: true
     third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
