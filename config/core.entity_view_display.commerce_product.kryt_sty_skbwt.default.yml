@@ -7,6 +7,8 @@ dependencies:
     - field.field.commerce_product.kryt_sty_skbwt.body
     - field.field.commerce_product.kryt_sty_skbwt.field_caregory
     - field.field.commerce_product.kryt_sty_skbwt.field_special_categories
+    - field.field.commerce_product.kryt_sty_skbwt.stores
+    - field.field.commerce_product.kryt_sty_skbwt.variations
   module:
     - commerce_product
 id: commerce_product.kryt_sty_skbwt.default

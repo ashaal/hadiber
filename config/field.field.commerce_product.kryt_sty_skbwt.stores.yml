@@ -1,0 +1,21 @@
+uuid: f1490d6b-db8d-4be6-b0cd-a70826bb14a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kryt_sty_skbwt
+    - field.storage.commerce_product.stores
+id: commerce_product.kryt_sty_skbwt.stores
+field_name: stores
+entity_type: commerce_product
+bundle: kryt_sty_skbwt
+label: Stores
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_store'
+  handler_settings: {  }
+field_type: entity_reference
