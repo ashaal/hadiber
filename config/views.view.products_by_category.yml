@@ -6,9 +6,6 @@ dependencies:
     - field.storage.commerce_product.field_product_image
     - image.style.thumbnail
     - taxonomy.vocabulary.categories
-  content:
-    - 'taxonomy_term:categories:1e9b1d1f-0ed6-4260-bf9d-7cef505155b8'
-    - 'taxonomy_term:categories:fb76b074-7700-4c1c-9f96-8db4fb44fe64'
   module:
     - commerce_product
     - image
@@ -20,7 +17,6 @@ description: ''
 tag: ''
 base_table: commerce_product_field_data
 base_field: product_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -275,6 +271,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         field_product_category_target_id:
           id: field_product_category_target_id
@@ -302,6 +300,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

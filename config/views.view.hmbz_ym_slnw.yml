@@ -4,8 +4,6 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.special_categories
-  content:
-    - 'taxonomy_term:special_categories:dee3a968-493a-408f-8a94-9f0740119c15'
   module:
     - commerce_product
     - taxonomy
@@ -16,7 +14,6 @@ description: ''
 tag: ''
 base_table: commerce_product_field_data
 base_field: product_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -149,6 +146,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         field_special_categories_target_id:
           id: field_special_categories_target_id
@@ -175,6 +174,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

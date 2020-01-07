@@ -3,11 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    0: commerce_product.commerce_product_type.kryt
-    1: field.field.commerce_product.kryt.body
-    2: field.field.commerce_product.kryt.field_product_category
-    3: field.field.commerce_product.kryt.field_product_image
-    5: image.style.thumbnail
+    - commerce_product.commerce_product_type.kryt
+    - field.field.commerce_product.kryt.body
+    - field.field.commerce_product.kryt.field_product_category
+    - field.field.commerce_product.kryt.field_product_image
+    - image.style.thumbnail
   module:
     - image
     - path
@@ -24,6 +24,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -38,6 +39,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
