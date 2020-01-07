@@ -69,6 +69,9 @@ theme:
   classy: 0
   bartik: 0
   seven: 0
+  bootstrap_barrio: 0
+  bootstrap_barrio_subtheme: 0
+  hadiber_theme: 0
   bootstrap: 0
 profile: standard
 _core:

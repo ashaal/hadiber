@@ -17,7 +17,7 @@ id: contact
 title: 'צור קשר'
 description: 'Basic email contact webform.'
 category: ''
-elements: "flexbox:\n  '#type': webform_flexbox\n  name:\n    '#title': 'Your Name'\n    '#type': textfield\n    '#required': true\n    '#default_value': '[current-user:display-name]'\n  email:\n    '#title': 'Your Email'\n    '#type': email\n    '#required': true\n    '#default_value': '[current-user:mail]'\nhorizontal_rule:\n  '#type': webform_horizontal_rule\n  '#attributes':\n    class:\n      - webform-horizontal-rule--gradient\n      - webform-horizontal-rule--thin\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'"
+elements: "name:\n  '#title': 'Your Name'\n  '#type': textfield\n  '#required': true\n  '#default_value': '[current-user:display-name]'\nemail:\n  '#title': 'Your Email'\n  '#type': email\n  '#required': true\n  '#default_value': '[current-user:mail]'\nsubject:\n  '#title': Subject\n  '#type': textfield\n  '#required': true\n  '#test': 'Testing contact webform from [site:name]'\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
 css: ''
 javascript: ''
 settings:

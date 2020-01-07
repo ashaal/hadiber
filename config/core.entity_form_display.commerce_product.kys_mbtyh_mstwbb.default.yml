@@ -3,16 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.kys_mbtyh_mstwbb
-    - field.field.commerce_product.kys_mbtyh_mstwbb.body
-    - field.field.commerce_product.kys_mbtyh_mstwbb.field_brand
-    - field.field.commerce_product.kys_mbtyh_mstwbb.field_product_category
-    - field.field.commerce_product.kys_mbtyh_mstwbb.field_product_image
-    - field.field.commerce_product.kys_mbtyh_mstwbb.field_short_description
-    - field.field.commerce_product.kys_mbtyh_mstwbb.field_special_categories
-    - field.field.commerce_product.kys_mbtyh_mstwbb.stores
-    - field.field.commerce_product.kys_mbtyh_mstwbb.variations
-    - image.style.thumbnail
+    0: commerce_product.commerce_product_type.kys_mbtyh_mstwbb
+    1: field.field.commerce_product.kys_mbtyh_mstwbb.body
+    2: field.field.commerce_product.kys_mbtyh_mstwbb.field_brand
+    3: field.field.commerce_product.kys_mbtyh_mstwbb.field_product_category
+    4: field.field.commerce_product.kys_mbtyh_mstwbb.field_product_image
+    5: field.field.commerce_product.kys_mbtyh_mstwbb.field_short_description
+    6: field.field.commerce_product.kys_mbtyh_mstwbb.field_special_categories
+    9: image.style.thumbnail
   module:
     - image
     - inline_entity_form
