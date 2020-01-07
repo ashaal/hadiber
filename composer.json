@@ -22,7 +22,7 @@
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
-        "drupal/core": "~8.7.10",
+        "drupal/core-recommended": "^8.8",
         "drupal/views_accordion": "^1.3",
         "drupal/webform": "^5.5",
         "drush-ops/behat-drush-endpoint": "^9.3",
@@ -39,14 +39,15 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
         "dmore/behat-chrome-extension": "^1.3",
         "drupal/coder": "^8.3.1",
+        "drupal/core-dev": "^8.8",
         "drupal/drupal-extension": "~3",
         "genesis/behat-fail-aid": "^2.1",
         "jcalderonzumba/gastonjs": "^1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
         "mikey179/vfsstream": "^1.2",
-        "phpunit/phpunit": "^4.8",
+        "phpunit/phpunit": "^7",
         "squizlabs/php_codesniffer": "^3.4.0",
-        "symfony/css-selector": "^2.8"
+        "symfony/css-selector": "^3.4.0"
     },
     "conflict": {
             "drupal/drupal": "*"
@@ -114,7 +115,20 @@
                 ".eslintrc.json",
                 ".htaccess",
                 "web.config"
-            ]
+            ],
+            "locations": {
+                "web-root": "web/"
+            },
+            "allowed-packages": [
+                "drupal/core"
+            ],
+            "file-mapping": {
+                "[web-root]/.htaccess": {
+                    "mode": "replace",
+                    "path": "web/core/assets/scaffold/files/htaccess",
+                    "overwrite": false
+                }
+            }
         }
     },
     "config": {
