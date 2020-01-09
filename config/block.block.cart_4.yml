@@ -1,6 +1,6 @@
 uuid: a2c9a10a-1542-4190-96c2-cd0cb9922a59
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - commerce_cart
@@ -8,8 +8,8 @@ dependencies:
     - bootstrap
 id: cart_4
 theme: bootstrap
-region: sidebar_second
-weight: 0
+region: navigation_collapsible
+weight: -8
 provider: null
 plugin: commerce_cart
 settings:
