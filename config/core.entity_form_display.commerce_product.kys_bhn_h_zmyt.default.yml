@@ -1,0 +1,71 @@
+uuid: 25946f88-c799-4e9d-9c47-9ea920628460
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kys_bhn_h_zmyt
+    - field.field.commerce_product.kys_bhn_h_zmyt.body
+    - field.field.commerce_product.kys_bhn_h_zmyt.field_caregory
+    - field.field.commerce_product.kys_bhn_h_zmyt.field_mwtg
+  module:
+    - commerce
+    - text
+id: commerce_product.kys_bhn_h_zmyt.default
+targetEntityType: commerce_product
+bundle: kys_bhn_h_zmyt
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_caregory:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_mwtg:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  stores:
+    type: commerce_entity_select
+    weight: 5
+    region: content
+    settings:
+      hide_single_entity: true
+      autocomplete_threshold: 7
+      autocomplete_size: 60
+      autocomplete_placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  uid: true
+  variations: true

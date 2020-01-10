@@ -1,0 +1,21 @@
+uuid: 8fd9e02d-e02c-4555-a792-ffd769b05d4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_mwtg
+field_name: field_mwtg
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 12
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

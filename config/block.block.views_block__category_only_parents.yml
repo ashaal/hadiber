@@ -1,0 +1,30 @@
+uuid: 1b7b9b06-395e-4740-8f44-fd860c540f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.category
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__category_only_parents
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:category-only_parents'
+settings:
+  id: 'views_block:category-only_parents'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /our-products
+    negate: false
+    context_mapping: {  }

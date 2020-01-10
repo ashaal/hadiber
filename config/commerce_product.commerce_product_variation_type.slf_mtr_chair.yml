@@ -1,0 +1,10 @@
+uuid: dcbb02da-36bd-4e1b-a4c7-62c01a3cdc50
+langcode: en
+status: true
+dependencies: {  }
+id: slf_mtr_chair
+label: 'כיסא בהנעה עצמית'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

@@ -1,0 +1,10 @@
+uuid: 0059ab44-4787-4dcd-b5e7-1269603c036b
+langcode: en
+status: true
+dependencies: {  }
+id: fld_bath_seat
+label: 'מושב מתקפל למקלחת'
+orderItemType: default
+generateTitle: false
+traits: {  }
+locked: false

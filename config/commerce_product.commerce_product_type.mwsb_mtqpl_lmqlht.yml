@@ -1,0 +1,12 @@
+uuid: 6e5be2ab-a0cc-462c-9381-0d414b5d7771
+langcode: en
+status: true
+dependencies: {  }
+id: mwsb_mtqpl_lmqlht
+label: 'מושב מתקפל למקלחת'
+description: ''
+variationType: fld_bath_seat
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

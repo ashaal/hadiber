@@ -1,0 +1,19 @@
+uuid: 38b4d643-9ce3-4f08-a31c-77037a56cc8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kys_bhn_h_zmyt
+    - field.storage.commerce_product.field_mwtg
+id: commerce_product.kys_bhn_h_zmyt.field_mwtg
+field_name: field_mwtg
+entity_type: commerce_product
+bundle: kys_bhn_h_zmyt
+label: מותג
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

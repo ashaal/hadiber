@@ -1,0 +1,10 @@
+uuid: fd2b0403-0690-4b2c-b485-f52f0a9e3e2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.new_teaser
+label: 'new teaser'
+targetEntityType: node
+cache: true

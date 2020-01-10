@@ -1,0 +1,12 @@
+uuid: c32ccf90-8bb5-4a91-9069-3a033ea8a0d3
+langcode: en
+status: true
+dependencies: {  }
+id: kys_bhn_h_zmyt
+label: 'כיסא בהנעה עצמית'
+description: ''
+variationType: slf_mtr_chair
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

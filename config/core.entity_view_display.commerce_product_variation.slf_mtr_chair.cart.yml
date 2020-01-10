@@ -1,0 +1,62 @@
+uuid: e2a6c0f4-1637-48c1-ae79-70855d00db0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.slf_mtr_chair
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.slf_mtr_chair.field_image
+    - image.style.medium
+  module:
+    - commerce_price
+    - image
+id: commerce_product_variation.slf_mtr_chair.cart
+targetEntityType: commerce_product_variation
+bundle: slf_mtr_chair
+mode: cart
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  list_price:
+    label: inline
+    type: commerce_price_default
+    weight: 2
+    region: content
+    settings:
+      strip_trailing_zeroes: true
+      currency_display: symbol
+    third_party_settings: {  }
+  price:
+    label: inline
+    type: commerce_price_default
+    weight: 3
+    region: content
+    settings:
+      strip_trailing_zeroes: true
+      currency_display: symbol
+    third_party_settings: {  }
+  sku:
+    type: string
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  title:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  product_id: true
