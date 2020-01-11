@@ -19,6 +19,7 @@
         "drupal/bootstrap_sass": "^1.9",
         "drupal/coffee": "^1.0@beta",
         "drupal/commerce": "^2.15",
+        "drupal/commerce_shipping": "^2.0@beta",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
