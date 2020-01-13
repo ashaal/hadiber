@@ -1,30 +1,24 @@
-uuid: 88e1696f-c2e4-4648-9173-5060c7ec646d
+uuid: 56358ba4-a3d3-4bd5-b257-dcf3136273de
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.leading_products
+    - views.view.mwzrym_mwbylym_mwd
   module:
-    - system
     - views
   theme:
     - bootstrap
 id: views_block__leading_products_block_1
 theme: bootstrap
 region: highlighted
-weight: -7
+weight: 0
 provider: null
-plugin: 'views_block:leading_products-block_1'
+plugin: 'views_block:mwzrym_mwbylym_mwd-block_1'
 settings:
-  id: 'views_block:leading_products-block_1'
+  id: 'views_block:mwzrym_mwbylym_mwd-block_1'
   label: ''
   provider: views
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }

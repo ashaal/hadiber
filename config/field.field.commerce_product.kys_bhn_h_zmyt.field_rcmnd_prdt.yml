@@ -1,0 +1,44 @@
+uuid: 37555c0d-5ed7-4a7d-b757-9f0b9dcf4578
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.kys_bhn_h_zmyt
+    - commerce_product.commerce_product_variation_type.default
+    - commerce_product.commerce_product_variation_type.fld_bath_seat
+    - commerce_product.commerce_product_variation_type.kryt_stwhh
+    - commerce_product.commerce_product_variation_type.kryt_stwhh_gwbh_12
+    - commerce_product.commerce_product_variation_type.kryt_sty_skbwt
+    - commerce_product.commerce_product_variation_type.kys_mbtyh_mstwbb
+    - commerce_product.commerce_product_variation_type.mhz_lmbtyh
+    - commerce_product.commerce_product_variation_type.slf_mtr_chair
+    - commerce_product.commerce_product_variation_type.spinning_bathroom_chair
+    - field.storage.commerce_product.field_rcmnd_prdt
+id: commerce_product.kys_bhn_h_zmyt.field_rcmnd_prdt
+field_name: field_rcmnd_prdt
+entity_type: commerce_product
+bundle: kys_bhn_h_zmyt
+label: 'מוצרים מומלצים'
+description: 'אנא בחר עד 6 מוצרים קשורים שיוצגו בתחתית עמוד הצגת המוצר'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      default: default
+      spinning_bathroom_chair: spinning_bathroom_chair
+      kys_mbtyh_mstwbb: kys_mbtyh_mstwbb
+      slf_mtr_chair: slf_mtr_chair
+      kryt_stwhh: kryt_stwhh
+      kryt_stwhh_gwbh_12: kryt_stwhh_gwbh_12
+      kryt_sty_skbwt: kryt_sty_skbwt
+      mhz_lmbtyh: mhz_lmbtyh
+      fld_bath_seat: fld_bath_seat
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: default
+field_type: entity_reference

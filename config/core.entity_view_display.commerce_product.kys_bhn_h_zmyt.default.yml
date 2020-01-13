@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.kys_bhn_h_zmyt.body
     - field.field.commerce_product.kys_bhn_h_zmyt.field_caregory
     - field.field.commerce_product.kys_bhn_h_zmyt.field_mwtg
+    - field.field.commerce_product.kys_bhn_h_zmyt.field_rcmnd_prdt
   module:
     - commerce_product
     - text
@@ -37,6 +38,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_rcmnd_prdt:
+    weight: 14
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
   title:
     label: hidden

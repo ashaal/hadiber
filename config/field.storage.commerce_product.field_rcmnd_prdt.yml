@@ -1,0 +1,19 @@
+uuid: 50173114-edd2-46d6-ad5f-06eae0288bad
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.field_rcmnd_prdt
+field_name: field_rcmnd_prdt
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product_variation
+module: core
+locked: false
+cardinality: 6
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.kys_bhn_h_zmyt.body
     - field.field.commerce_product.kys_bhn_h_zmyt.field_caregory
     - field.field.commerce_product.kys_bhn_h_zmyt.field_mwtg
+    - field.field.commerce_product.kys_bhn_h_zmyt.field_rcmnd_prdt
   module:
     - commerce
     - text
@@ -38,6 +39,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_rcmnd_prdt:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   status:
     type: boolean_checkbox

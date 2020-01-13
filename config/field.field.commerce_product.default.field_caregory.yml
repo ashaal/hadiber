@@ -1,0 +1,29 @@
+uuid: f8124f27-e3b3-426f-bf3a-8ff2de56e3b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_caregory
+    - taxonomy.vocabulary.categories
+id: commerce_product.default.field_caregory
+field_name: field_caregory
+entity_type: commerce_product
+bundle: default
+label: קטגוריה
+description: 'אנא בחר קטגוריה מהרשימה שאליה תרצה לשייך את המוצר'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
