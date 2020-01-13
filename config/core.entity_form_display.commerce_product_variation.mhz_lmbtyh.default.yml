@@ -1,0 +1,61 @@
+uuid: e348d836-944a-47c5-b9c4-4853850c96a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.mhz_lmbtyh
+    - field.field.commerce_product_variation.mhz_lmbtyh.weight
+  module:
+    - commerce_price
+    - physical
+id: commerce_product_variation.mhz_lmbtyh.default
+targetEntityType: commerce_product_variation
+bundle: mhz_lmbtyh
+mode: default
+content:
+  list_price:
+    type: commerce_list_price
+    weight: -1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 90
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  weight:
+    type: physical_measurement_default
+    weight: 91
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  uid: true

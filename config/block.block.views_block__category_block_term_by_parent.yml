@@ -12,7 +12,7 @@ dependencies:
 id: views_block__category_block_term_by_parent
 theme: bootstrap
 region: content
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:category-block_term_by_parent'
 settings:

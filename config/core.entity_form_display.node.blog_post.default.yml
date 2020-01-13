@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.blog_post.body
+    - field.field.node.blog_post.field_blog_category
     - field.field.node.blog_post.field_blog_post_image
     - image.style.thumbnail
     - node.type.blog_post
@@ -32,6 +33,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_blog_category:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_blog_post_image:
     type: image_image
     weight: 8

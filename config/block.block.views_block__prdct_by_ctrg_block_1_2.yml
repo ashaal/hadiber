@@ -1,4 +1,4 @@
-uuid: b5532e00-ff19-4671-899f-767dc2128fbe
+uuid: 240b653f-f05e-4187-97aa-9219ea764f71
 langcode: en
 status: true
 dependencies:
@@ -9,23 +9,23 @@ dependencies:
     - views
   theme:
     - bootstrap
-id: views_block__prdct_by_ctrg_block_1
+id: views_block__prdct_by_ctrg_block_1_2
 theme: bootstrap
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: 'views_block:prdct_by_ctrg-block_1'
 settings:
   id: 'views_block:prdct_by_ctrg-block_1'
-  label: ''
+  label: 'Products by category'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Products by category'
   items_per_page: none
   context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: 'taxonomy/term/*'
+    pages: '/taxonomy/term/*'
     negate: false
     context_mapping: {  }

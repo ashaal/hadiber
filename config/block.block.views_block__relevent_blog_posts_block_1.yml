@@ -1,19 +1,22 @@
-uuid: 1937ef91-d677-4cc0-895e-24ef6e50858e
+uuid: 54186126-6ac7-41df-b66f-e760a8dbf335
 langcode: en
 status: true
 dependencies:
+  config:
+    - views.view.relevent_blog_posts
   module:
     - system
+    - views
   theme:
     - bootstrap
-id: views_block__products_by_category_block_1_2
+id: views_block__relevent_blog_posts_block_1
 theme: bootstrap
 region: content
-weight: -10
+weight: -5
 provider: null
-plugin: 'views_block:products_by_category-block_1'
+plugin: 'views_block:relevent_blog_posts-block_1'
 settings:
-  id: 'views_block:products_by_category-block_1'
+  id: 'views_block:relevent_blog_posts-block_1'
   label: ''
   provider: views
   label_display: visible
@@ -23,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /bath
+    pages: '/taxonomy/term/*'
     negate: false
     context_mapping: {  }

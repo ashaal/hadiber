@@ -156,10 +156,10 @@ display:
       empty: {  }
       relationships: {  }
       arguments:
-        field_product_category_target_id:
-          id: field_product_category_target_id
-          table: commerce_product__field_product_category
-          field: field_product_category_target_id
+        field_caregory_target_id:
+          id: field_caregory_target_id
+          table: commerce_product__field_caregory
+          field: field_caregory_target_id
           relationship: none
           group_type: group
           admin_label: ''
@@ -196,6 +196,10 @@ display:
           not: false
           plugin_id: numeric
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

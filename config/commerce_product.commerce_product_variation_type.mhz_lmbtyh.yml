@@ -1,0 +1,11 @@
+uuid: d9c4a6c1-8212-49d8-b7d6-f103f38e952d
+langcode: en
+status: true
+dependencies: {  }
+id: mhz_lmbtyh
+label: 'מאחז לאמבטיה'
+orderItemType: add_to_cart
+generateTitle: false
+traits:
+  - purchasable_entity_shippable
+locked: false

@@ -1,0 +1,24 @@
+uuid: da4f0c58-69f8-4c50-b5b1-ddf7efde9dc9
+langcode: en
+status: true
+dependencies: {  }
+id: h_brh_bnqyt
+label: 'העברה בנקאית'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: "אנא בצע העברה בנקאית ושלח אסמכתא לדוא\"ל: rhrh@gmcil.com\r\nההזמנה תסתיים כאשר יאושר התשלום."
+    format: plain_text
+  display_label: 'תשלום בהעברה בנקאית'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions:
+  -
+    plugin: order_customer_role
+    configuration:
+      roles:
+        - authenticated
+conditionOperator: AND

@@ -1,0 +1,29 @@
+uuid: 850525f4-2e1b-4c1f-bf37-253911fb2772
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_category
+    - node.type.blog_post
+    - taxonomy.vocabulary.categories
+id: node.blog_post.field_blog_category
+field_name: field_blog_category
+entity_type: node
+bundle: blog_post
+label: 'blog category'
+description: 'בחר קטגוריה אליה תרצה לשייך את הכתבה'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
