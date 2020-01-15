@@ -8,7 +8,6 @@ dependencies:
     - field.field.commerce_product_variation.default.field_image
     - image.style.medium
   module:
-    - commerce_price
     - image
 id: commerce_product_variation.default.teaser
 targetEntityType: commerce_product_variation
@@ -24,15 +23,6 @@ content:
       image_style: medium
       image_link: content
     third_party_settings: {  }
-  price:
-    label: hidden
-    type: commerce_price_default
-    weight: 2
-    region: content
-    settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
-    third_party_settings: {  }
   title:
     type: string
     weight: 0
@@ -43,5 +33,6 @@ content:
     third_party_settings: {  }
 hidden:
   list_price: true
+  price: true
   product_id: true
   sku: true
