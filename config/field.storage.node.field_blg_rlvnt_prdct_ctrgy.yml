@@ -1,0 +1,20 @@
+uuid: a87c7b09-07bd-40d7-8b88-30c337d1bae9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_blg_rlvnt_prdct_ctrgy
+field_name: field_blg_rlvnt_prdct_ctrgy
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 6
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

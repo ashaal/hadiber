@@ -6,12 +6,13 @@ dependencies:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.cart
     - field.field.commerce_product_variation.default.field_image
+    - image.style.thumbnail
   enforced:
     module:
       - commerce_cart
       - commerce_product
   module:
-    - commerce_price
+    - image
 _core:
   default_config_hash: 6GpSQzJM6086KplhyiaTF3ezvQ_ecs8bIcW4GQMzrJU
 id: commerce_product_variation.default.cart
@@ -19,33 +20,25 @@ targetEntityType: commerce_product_variation
 bundle: default
 mode: cart
 content:
-  list_price:
-    label: hidden
-    type: commerce_price_default
+  field_image:
+    type: image
     weight: 1
     region: content
-    settings:
-      strip_trailing_zeroes: false
-      currency_display: symbol
-    third_party_settings: {  }
-  product_id:
-    type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: thumbnail
+      image_link: content
     third_party_settings: {  }
-    region: content
-  sku:
+  title:
     type: string
-    weight: 2
+    weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
-  field_image: true
+  list_price: true
   price: true
-  title: true
+  product_id: true
+  sku: true

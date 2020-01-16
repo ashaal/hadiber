@@ -67,6 +67,12 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  stores:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -78,6 +84,5 @@ content:
 hidden:
   created: true
   path: true
-  stores: true
   uid: true
   variations: true

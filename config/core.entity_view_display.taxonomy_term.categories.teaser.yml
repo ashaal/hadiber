@@ -1,29 +1,22 @@
-uuid: c8cbabcf-7127-41a0-86b6-79604b2e12e5
+uuid: 5b7eefeb-e128-4d9a-9f8e-2a50a3fb8ee0
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.taxonomy_term.teaser
     - field.field.taxonomy_term.categories.field_ctgry_img
     - field.field.taxonomy_term.categories.field_tywg_qtgwryh
     - image.style.medium
     - taxonomy.vocabulary.categories
   module:
     - image
-    - text
-id: taxonomy_term.categories.default
+id: taxonomy_term.categories.teaser
 targetEntityType: taxonomy_term
 bundle: categories
-mode: default
+mode: teaser
 content:
-  description:
-    label: hidden
-    type: text_default
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_ctgry_img:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: medium
@@ -32,4 +25,5 @@ content:
     type: image
     region: content
 hidden:
+  description: true
   field_tywg_qtgwryh: true
