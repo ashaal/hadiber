@@ -1,22 +1,22 @@
-uuid: 7f6b30a2-691b-470d-86af-609bb499d373
+uuid: f0200f8b-22e2-4a27-8c0b-0a953e67eef9
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.hmbz_ym_slnw
+    - views.view.mwzrym_mwbylym_mwd
   module:
     - system
     - views
   theme:
-    - bootstrap
-id: views_block__our_sales
-theme: bootstrap
+    - bootstrap_sass
+id: views_block__mwzrym_mwbylym_mwd_block_1
+theme: bootstrap_sass
 region: highlighted
-weight: -8
+weight: 0
 provider: null
-plugin: 'views_block:hmbz_ym_slnw-block_1'
+plugin: 'views_block:mwzrym_mwbylym_mwd-block_1'
 settings:
-  id: 'views_block:hmbz_ym_slnw-block_1'
+  id: 'views_block:mwzrym_mwbylym_mwd-block_1'
   label: ''
   provider: views
   label_display: visible

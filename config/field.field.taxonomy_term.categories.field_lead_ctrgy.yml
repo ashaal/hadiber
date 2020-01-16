@@ -1,0 +1,23 @@
+uuid: 030e7ddd-626e-4e8c-9da5-860228bd45f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_lead_ctrgy
+    - taxonomy.vocabulary.categories
+id: taxonomy_term.categories.field_lead_ctrgy
+field_name: field_lead_ctrgy
+entity_type: taxonomy_term
+bundle: categories
+label: 'קטגוריה מובילה'
+description: 'אנא סמן אם ברצונך לתייג קטגוריה זו כקטגוריה מובילה'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

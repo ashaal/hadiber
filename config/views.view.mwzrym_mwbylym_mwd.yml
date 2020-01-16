@@ -50,16 +50,11 @@ display:
           items_per_page: 6
           offset: 0
       style:
-        type: grid
+        type: default
         options:
+          row_class: col-3
+          default_row_class: true
           uses_fields: false
-          columns: 4
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
       row:
         type: 'entity:commerce_product_variation'
         options:

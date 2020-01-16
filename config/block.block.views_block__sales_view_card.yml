@@ -1,0 +1,30 @@
+uuid: bcc2816f-39b7-4743-9a27-728d894a4b7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sales_view
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__sales_view_card
+theme: bootstrap_sass
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:sales_view-card'
+settings:
+  id: 'views_block:sales_view-card'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

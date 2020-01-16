@@ -1,0 +1,31 @@
+uuid: 541bb0b2-c343-4252-88f4-dec2c4454485
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.category
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__category_block_term_by_parent_2
+theme: bootstrap_sass
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:category-block_term_by_parent'
+settings:
+  id: 'views_block:category-block_term_by_parent'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/taxonomy/term/*'
+    negate: false
+    context_mapping: {  }

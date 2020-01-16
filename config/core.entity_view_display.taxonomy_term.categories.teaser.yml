@@ -5,7 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.teaser
     - field.field.taxonomy_term.categories.field_ctgry_img
-    - field.field.taxonomy_term.categories.field_tywg_qtgwryh
+    - field.field.taxonomy_term.categories.field_lead_ctrgy
     - image.style.medium
     - taxonomy.vocabulary.categories
   module:
@@ -26,4 +26,4 @@ content:
     region: content
 hidden:
   description: true
-  field_tywg_qtgwryh: true
+  field_lead_ctrgy: true

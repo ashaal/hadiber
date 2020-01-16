@@ -1,0 +1,30 @@
+uuid: 8021ad03-df5d-43c0-8228-e40ac2c65b04
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.leading_categories_view
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__leading_categories_view_block_1
+theme: bootstrap_sass
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:leading_categories_view-block_1'
+settings:
+  id: 'views_block:leading_categories_view-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 2b5ae9c2-c8c6-42f3-8bf0-c5618c6cae11
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.prdct_by_ctrg
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__prdct_by_ctrg_block_1
+theme: bootstrap_sass
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:prdct_by_ctrg-block_1'
+settings:
+  id: 'views_block:prdct_by_ctrg-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/taxonomy/term/*'
+    negate: false
+    context_mapping: {  }

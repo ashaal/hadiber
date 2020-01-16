@@ -257,13 +257,8 @@ display:
             title: All
           title_enable: false
           title: ''
-          default_argument_type: taxonomy_tid
-          default_argument_options:
-            term_page: '1'
-            anyall: ','
-            node: false
-            limit: false
-            vids: {  }
+          default_argument_type: node
+          default_argument_options: {  }
           default_argument_skip_url: false
           summary_options:
             base_path: ''

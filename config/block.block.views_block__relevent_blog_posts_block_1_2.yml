@@ -1,0 +1,33 @@
+uuid: 2a80cf44-e5aa-40ee-b805-343db0ede0eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.relevent_blog_posts
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap_sass
+id: views_block__relevent_blog_posts_block_1_2
+theme: bootstrap_sass
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:relevent_blog_posts-block_1'
+settings:
+  id: 'views_block:relevent_blog_posts-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      blog_post: blog_post
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
