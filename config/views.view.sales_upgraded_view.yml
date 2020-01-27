@@ -1,18 +1,19 @@
-uuid: edabae4f-77bd-4b1a-a1ea-a9da8efc935b
+uuid: 3a37f9d2-80af-4be2-8184-1bd4e7e772dc
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.commerce_product_variation.teaser
+    - commerce_product.commerce_product_variation_type.default
   module:
+    - commerce
     - commerce_product
-id: mwzrym_mwbylym_mwd
-label: 'מוצרים מובילים מאוד'
+id: sales_upgraded_view
+label: sales_upgraded_view
 module: views
 description: ''
 tag: ''
 base_table: commerce_product_variation_field_data
-base_field: variation_id
+base_field: nid
 display:
   default:
     display_plugin: default
@@ -51,15 +52,8 @@ display:
           offset: 0
       style:
         type: default
-        options:
-          row_class: col-md-4
-          default_row_class: true
-          uses_fields: false
       row:
-        type: 'entity:commerce_product_variation'
-        options:
-          relationship: none
-          view_mode: teaser
+        type: fields
       fields:
         title:
           table: commerce_product_variation_field_data
@@ -139,14 +133,25 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
+        type:
+          id: type
+          table: commerce_product_variation_field_data
+          field: type
+          value:
+            default: default
+          entity_type: commerce_product_variation
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts: {  }
-      title: 'מוצרים מובילים'
+      title: sales_upgraded
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
-      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:

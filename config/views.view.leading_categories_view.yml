@@ -58,7 +58,7 @@ display:
         type: default
         options:
           grouping: {  }
-          row_class: col-3
+          row_class: col-md-3
           default_row_class: true
       row:
         type: fields

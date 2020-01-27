@@ -71,7 +71,11 @@ display:
             last: 'Last »'
           quantity: 9
       style:
-        type: grid
+        type: default
+        options:
+          grouping: {  }
+          row_class: 'col-md-3 col-sm-4'
+          default_row_class: true
       row:
         type: fields
       fields:
